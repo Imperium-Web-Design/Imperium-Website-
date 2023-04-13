@@ -24,29 +24,54 @@ html {
 	font-family: 'Alice', serif;
 }
 
-.div-buton {
-	display: flex;
-	height: 70px;
-	margin-top: 38px;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: center;
+#scrl-icon{
+  --clr:#ccc;
+  display:block;
+  width:100px;
+  height:auto;
+  overflow:visible;
+  margin:100px auto;
+}
+.scrl-body{
+  fill:none;
+  stroke:var(--clr);
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+  stroke-width:3.5;
+  animation: scroll-parallax 1.5s cubic-bezier(.41,.07,.83,.67) infinite running
+}
+@keyframes scroll-parallax {
+  25%{
+    transform:translateY(0)
+  }
+  75%{
+    transform:translateY(-20%)
+  }
 }
 
-.lottie-animation-2 {
-	position: relative;
-	left: 0;
-	top: auto;
-	right: auto;
-	bottom: 0;
-	z-index: 1;
-	width: 50px;
-	height: 50px;
-	margin-top: 0;
-	padding-top: 0;
-	-ms-grid-row-align: auto;
-	align-self: auto;
+.scrl-wheel{
+  fill:var(--clr);
+  transform-origin:bottom;
+  animation: scroll-animation 1.5s linear infinite running;
+  will-change:transform;
+}
+
+@keyframes scroll-animation{
+0% {
+	transform: translateY(-90%) scale(0.7, 0.1)
+	}
+10% {
+  transform: translateY(-90%) scaleY(0.3)
+  }
+25% {
+  transform: translateY(-20%) scaleY(1)
+  }
+75% {
+	transform: translateY(40%) scaleY(1)
+	}
+100% {
+	transform: translateY(20%) scale(0.8, 0.1);
+	}
 }
 
 .text-block-16 {
@@ -61,7 +86,6 @@ html {
 	font-size: 11px;
 	letter-spacing: 2px;
 }
-
 
 body {
 	background-color: #FFF;
