@@ -16,7 +16,7 @@
 }
 
 a {
-	color: #0088CC;
+	color: white;
 }
 
 a:hover {
@@ -73,7 +73,7 @@ html .text-hover-quaternary:hover {
 
 html .text-color-dark,
 html .text-dark {
-	color: #212529 !important;
+	color: white;
 }
 
 html .text-color-hover-dark:hover,
@@ -4652,7 +4652,7 @@ html[dir="rtl"] #header .tip-light:before {
 }
 
 #header .header-btn-collapse-nav {
-	background: #0088CC;
+	background: #D39B34;
 }
 
 @media (min-width: 992px) {

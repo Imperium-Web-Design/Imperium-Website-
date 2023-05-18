@@ -16455,12 +16455,13 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 	position: relative;
 	text-decoration: none;
 	max-width: 100%;
-	background-color: #FFF;
+	background-color: black;
 	border-radius: 4px;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform: translate3d(0, 0, 0);
+	color: white;
 }
 
 .thumb-info .thumb-info-wrapper {
@@ -16656,7 +16657,8 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 
 .thumb-info img {
 	transition: all 0.3s ease;
-	border-radius: 3px;
+	border-radius: 5px;
+	border: 5px solid #D39B34;
 	position: relative;
 	width: 100%;
 }
